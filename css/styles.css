@@ -179,7 +179,22 @@ body {
 }
 
 .current {
+  position: relative;
   color: var(--accent-color);
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 27px);
+  display: inline-block;
+  width: 48px;
+  height: 4px;
+  background-color: var(--accent-color);  
+  border-radius: 2px;
+  
 }
 
 .contact-list {
